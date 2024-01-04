@@ -1,0 +1,3 @@
+<app-header [cartAmount]="cartAmount" />
+<app-feed [offset]="+page" (cartChangeAmount)="changeCartAmount($event)"/>
+<app-pagination />

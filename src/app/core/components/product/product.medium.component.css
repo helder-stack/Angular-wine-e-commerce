@@ -1,0 +1,9 @@
+@media screen and (max-width: 900px) {
+    .product_container {
+        width: 200px;
+    }
+
+    .product_container .details .data .discount {
+        width: auto;
+    }
+}

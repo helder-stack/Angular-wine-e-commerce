@@ -1,0 +1,13 @@
+<div class="cart_item" *ngIf="product.amount > 0">
+    <div class="product_data">
+        <img [src]="product.photo" />
+        <div>
+            <p>{{product.name}} ({{product.amount}})</p>
+            <p class="price">R$ {{product.price}}</p>
+        </div>
+    </div>
+    <div class="product_control">
+        <p (click)="addItem()">+</p>
+        <p (click)="removeItem()">-</p>
+    </div>
+</div>

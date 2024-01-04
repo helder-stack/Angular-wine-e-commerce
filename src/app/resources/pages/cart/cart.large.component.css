@@ -1,0 +1,30 @@
+.products{
+    width: auto;
+    padding: 3rem 3rem 3rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.products .container{
+    width: 100%;
+    height: auto;
+}
+
+.products .container .header{
+    font-size: 1.2rem;
+}
+
+.products .container .header span{
+    font-weight: 700;
+    color: black;
+}
+
+.products .products_items{
+    width: 100%;
+    height: auto;
+    padding: 3rem 0rem;
+    display: grid;
+    gap: 20px;
+
+}

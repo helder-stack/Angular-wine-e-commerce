@@ -1,0 +1,14 @@
+@media screen and (max-width: 400px) {
+    div div{
+        display: none !important;
+    }
+
+    .before_steps, .after_steps{
+        display: none;
+    }
+
+    .pagination{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}

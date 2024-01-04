@@ -1,0 +1,190 @@
+@media screen and (max-width: 900px) {
+    .container {
+        padding: 2rem 3rem;
+    }
+
+    .product img {
+        width: 350px;
+    }
+
+    .product .data .comment p:nth-of-type(2) {
+        width: 100%;
+    }
+
+    .add {
+        width: 300px;
+    }
+
+    .add .controls {
+        display: flex;
+        flex-grow: 0.4;
+        padding-right: 2rem;
+        justify-content: space-between;
+    }
+
+    .add p {
+        color: white;
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+
+    .add .controls p:nth-of-type(1),
+    .add .controls p:nth-of-type(3) {
+        border-radius: 100%;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .add .add_button {
+        height: 100%;
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (max-width: 730px) {
+
+    .container {
+        padding: 0rem 1rem;
+    }
+
+    .product .data .prices {
+        display: none;
+    }
+
+    .bottom_bar_mobile {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+        box-shadow: 0px -5px 5px 0px rgba(0, 0, 0, 0.06);
+        background-color: white;
+        display: flex;
+        align-items: center;
+    }
+
+    .bottom_bar_mobile div {
+        width: 50%;
+    }
+
+    .bottom_bar_mobile .prices p {
+        line-height: 25px;
+    }
+
+    .bottom_bar_mobile .prices p:nth-of-type(1){
+        text-decoration: line-through;
+    }
+    
+    .bottom_bar_mobile .prices p:nth-of-type(1),
+    .bottom_bar_mobile .prices p:nth-of-type(3) {
+        font-size: 0.9rem;
+    }
+
+
+    .bottom_bar_mobile .prices p:nth-last-of-type(2) {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: rgba(200, 26, 120, 1);
+    }
+
+    .bottom_bar_mobile .prices p span {
+        color: rgba(200, 26, 120, 1);
+        font-size: 1.8rem;
+    }
+
+    .bottom_bar_mobile .prices .disccount {
+        position: absolute;
+        background-color: rgba(242, 102, 73, 1);
+        top: -15px;
+        padding: 5px;
+        width: auto;
+        color: white;
+        font-weight: 700;
+        border-radius: 5px;
+        font-size: 0.8rem;
+    }
+
+
+    .bottom_bar_mobile button {
+        font-size: 1.1rem;
+        color: white;
+        font-weight: 700;
+        border-radius: 5px;
+        padding: 1rem;
+        border: none;
+        width: 100%;
+        background-color: rgba(126, 188, 67, 1);
+    }
+
+    .add_container {
+        display: none;
+    }
+
+    .product .image {
+        display: none;
+    }
+
+    .mobile_image {
+        display: flex;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .stars {
+        display: none;
+    }
+
+    .mobile_image img {
+        width: 150px;
+    }
+
+    .product .data .page {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .product .data .page p {
+        font-size: 1rem;
+
+    }
+
+    .product .data .wine .data {
+        justify-content: center;
+    }
+
+    .product .data .wine h1 {
+        text-align: center;
+    }
+
+    .product .data .comment {
+        padding: 2rem 0rem 6rem 0rem;
+
+    }
+
+    .product .data .comment p:first-of-type {
+        font-weight: 700;
+        color: black;
+        font-size: 1.5rem;
+    }
+
+    .product .data .comment p:nth-of-type(2) {
+        font-size: 1.1rem;
+        padding: 1rem 0rem;
+        width: 100%;
+        line-height: 30px;
+    }
+
+    .back {
+        display: none;
+    }
+
+}

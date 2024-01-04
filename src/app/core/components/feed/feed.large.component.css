@@ -1,0 +1,71 @@
+.feed {
+    width: auto;
+    height: auto;
+    padding: 3rem;
+    padding-left: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feed div .header p {
+    font-weight: 700;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.feed div{
+    min-width: 200px;
+}
+
+.feed .filter_container .body {
+    padding: 2rem 0rem;
+}
+
+.feed .filter_container .body p {
+    font-weight: 700;
+}
+
+.feed .filter_container .body .filters {
+    margin-top: 1rem;
+}
+
+.feed .filter_container .body .filters .filter {
+    padding: 1em 0rem;
+    display: flex;
+    align-items: center;
+}
+
+.feed .filter_container .body .filters .filter input[type=radio] {
+    width: 20px;
+    height: 20px;
+    accent-color: rgba(209, 75, 143, 1);
+}
+
+.feed .filter_container .body .filter label {
+    padding-left: 0.5rem;
+    color: black
+}
+
+.feed .products {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+.feed .products .header p{
+    font-weight: 400;
+}
+
+.feed .products .header span{
+    font-weight: 700;
+    color: black
+}
+
+.feed .products .body{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 0rem;
+    gap: 50px
+}

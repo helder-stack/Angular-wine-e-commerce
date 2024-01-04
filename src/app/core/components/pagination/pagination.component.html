@@ -1,0 +1,39 @@
+<div class="pagination">
+    <a class="before" (click)="redirect((+currentPage) - 1)" [ngStyle]="{'display': (+currentPage-1) >= 1 ? '' : 'none'}">
+        <img src=" ../../../../assets/images/arrow 2.svg" class="inverse " />
+    <img src="../../../../assets/images/arrow 2.svg" class="inverse " />
+    <p>Anterior</p>
+    </a>
+    <a class="before_steps" (click)="redirect((+currentPage) - 3)" [ngStyle]="{'display': (+currentPage-1) >= 1 ? '' : 'none'}">
+        <p>...</p>
+    </a>
+    <div class="active">
+        <a>
+            {{
+            currentPage
+            }}
+        </a>
+    </div>
+    <div class="expansive" [ngStyle]="{'display': (+currentPage+1) <= pages.length ? '' : 'none'}">
+        <a>
+            {{
+            +currentPage +1
+            }}
+        </a>
+    </div>
+    <div [ngStyle]="{'display': (+currentPage+2 ) <= pages.length ? '' : 'none'}">
+        <a>
+            {{
+            +currentPage + 2
+            }}
+        </a>
+    </div>
+    <a class="after_steps" (click)="redirect((+currentPage+1) + 3)" [ngStyle]="{'display': (+currentPage+2 ) <= pages.length ? '' : 'none'}">
+        <p>...</p>
+    </a>
+    <a class="before" (click)="redirect(+currentPage + 1)" [ngStyle]="{'display': (+currentPage+2 ) <= pages.length ? '' : 'none'}">
+        <p>Próximo</p>
+        <img src="../../../../assets/images/arrow 2.svg" />
+        <img src="../../../../assets/images/arrow 2.svg" />
+    </a>
+</div>

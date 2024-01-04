@@ -1,0 +1,9 @@
+<app-header [cartAmount]="cartAmount"/>
+<div class="products">
+    <div class="container">
+        <p class="header"><span>{{cartAmount}}</span> produtos encontrados</p>
+        <div class="products_items">
+            <app-cart-item *ngFor="let product of products" [product]="product" (changeCartAmount)="changeCartAmount($event)"/>
+        </div>
+    </div>
+</div>

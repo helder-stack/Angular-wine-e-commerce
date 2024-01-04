@@ -1,0 +1,24 @@
+<div class="product_container" (click)="redirect()">
+    <div class="details">
+        <div class="photo">
+            <img [src]="photo" alt="">
+        </div>
+        <div class="data">
+            <div class="title">
+                <p>{{name}}</p>
+            </div>
+            <div class="discount">
+                <p class="price">R${{price.toFixed(2)}}</p>
+                <p class="discount_value">{{discount}}% OFF</p>
+            </div>
+            <div class="partner">
+                <p>{{'Sócio wine'.toUpperCase()}}</p>&nbsp;&nbsp;
+                <p class="price">R$ <span class="price">{{price - (discount * price)/100 }}</span></p>
+            </div>
+            <div class="notPartner">
+                <p>{{("Não sócio R$"+price.toFixed(2)).toUpperCase()}}</p>
+            </div>
+        </div>
+    </div>
+    <button (click)="addInCart(id)">ADICIONAR</button>
+</div>

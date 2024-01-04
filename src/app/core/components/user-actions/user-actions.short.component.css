@@ -1,0 +1,16 @@
+@media screen and (max-width: 600px) {
+
+    .user-actions {
+        width: 150px;
+        right: 25px;
+    }
+
+    .profile {
+        display: none;
+    }
+
+    .user-actions .search img {
+        width: 40px;
+    }
+
+}

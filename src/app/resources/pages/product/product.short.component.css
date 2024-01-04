@@ -1,0 +1,51 @@
+@media screen and (max-width: 350px) {
+    .bottom_bar_mobile .prices p:nth-last-of-type(2) {
+        font-size: 1.2rem;
+    }
+
+    .bottom_bar_mobile {
+        flex-direction: column;
+    }
+
+    .bottom_bar_mobile div{
+        width: 100%;
+    }
+
+    .bottom_bar_mobile .prices p span {
+        color: rgba(200, 26, 120, 1);
+        font-size: 1.4rem;
+    }
+
+    .product .data .comment {
+        padding: 2rem 0rem 10rem 0rem;
+    }
+
+    .product .data .page {
+        display: flex;
+        align-items: center;
+    }
+    
+    .product .data .page p {
+        padding: 0.5rem;
+        font-size: 0.7rem;
+    }
+
+    .product .data .wine h1 {
+        padding-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .product .data .wine .data{
+        width: 100%;
+    }
+
+    .product .data .wine p {
+        padding: 0rem 1rem;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .product .data .wine .data{
+    }
+
+}

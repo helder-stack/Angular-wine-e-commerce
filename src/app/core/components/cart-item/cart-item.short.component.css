@@ -1,0 +1,36 @@
+@media screen and (max-width: 400px) {
+    .cart_item {
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    .product_control {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-top: 1rem;
+    }
+
+    .product_control p{
+        font-weight: 700;
+    }
+
+    .cart_item .product_data {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart_item .product_data div p {
+        padding: 0.5rem 0.5rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .cart_item .product_data div .price{
+        margin: auto;
+        font-size: 1.5rem;
+        color: rgba(200, 26, 120, 1);
+        font-weight: 700;
+    }
+
+}

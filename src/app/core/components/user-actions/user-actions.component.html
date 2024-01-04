@@ -1,0 +1,8 @@
+<div class="user-actions">
+    <div class="cart" (click)="redirect('cart')">
+        <img src="../../../assets/images/wineboxcart.svg" />
+        <div class="amount" [ngStyle]="{'display': (itemsAmount >= 1) ? '' : 'none'}">
+            {{itemsAmount > 9 ? '9+' : itemsAmount}}
+        </div>
+    </div>
+</div>

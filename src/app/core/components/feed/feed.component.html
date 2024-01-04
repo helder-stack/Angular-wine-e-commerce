@@ -1,0 +1,49 @@
+<div class="feed">
+    <div class="filter_container">
+        <div class="header">
+            <p>Refine sua busca</p>
+        </div>
+        <div class="body">
+            <p>Por preço</p>
+            <div class="filters">
+                <div class="filter">
+                    <input aria-label="no_checked" type="radio" value="40" name="value" (click)="radioHandler($event)" (change)="filter($event)" />
+                    <label for="">Até R$40</label>
+                </div>
+                <div class="filter">
+                    <input aria-label="no_checked" type="radio" value="40-60" name="value" (click)="radioHandler($event)" (change)="filter($event)"/>
+                    <label for="">R$40 A R$60</label>
+                </div>
+                <div class="filter">
+                    <input aria-label="no_checked" type="radio" value="100-200" name="value" (click)="radioHandler($event)" (change)="filter($event)"/>
+                    <label for="">R$100 A R$200</label>
+                </div>
+                <div class="filter">
+                    <input aria-label="no_checked" type="radio" value="200-500" name="value" (click)="radioHandler($event)" (change)="filter($event)"/>
+                    <label for="">R$200 A R$500</label>
+                </div>
+                <div class="filter">
+                    <input aria-label="no_checked" type="radio" value=">500" name="value" (click)="radioHandler($event)" (change)="filter($event)"/>
+                    <label for="">Acima de R$500</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="products">
+        <div class="header">
+            <p><span>{{this.filteredWines.length}}</span> produtos encontrados</p>
+        </div>
+        <div class="body">
+            <app-product 
+            *ngFor="let product of filteredWines;" 
+            [price]="product.price"
+            [name]="product.name"
+            [discount]="product.discount"
+            [id]="product.id"
+            [photo]="product.photo"
+            [slug]="product.slug"
+            (changeCartAmount)="changeCartAmount($event)"
+            />
+        </div>
+    </div>
+</div>

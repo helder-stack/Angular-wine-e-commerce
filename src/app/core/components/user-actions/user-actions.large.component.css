@@ -1,0 +1,39 @@
+.user-actions{
+    height: 100%;
+    width: 400px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
+
+.user-actions img{
+    width: 50px;
+}
+
+.user-actions .cart{
+    position: relative;
+}
+
+.user-actions .amount{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    position: absolute;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(79, 191, 165, 1);
+    bottom: -5px;
+    right: -15px;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .user-actions{
+        width: 300px;
+    }
+}

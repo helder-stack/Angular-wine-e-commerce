@@ -1,0 +1,71 @@
+<app-header [cartAmount]="cartAmount"/>
+<div class="container">
+    <div class="back" (click)="redirect()">
+        <img src="../../../../assets/images/left_arrow.svg" alt="">
+        <p>Voltar</p>
+    </div>
+    <div class="product">
+        <div class="image">
+            <img [src]="product.photo" alt="">
+        </div>
+        <div class="data">
+            <div class="page">
+                <p>Vinhos</p>
+                <img src="../../../../assets/images/right_arrow.svg" alt="">
+                <p>{{product.country}}</p>
+                <img src="../../../../assets/images/right_arrow.svg" alt="">
+                <p>{{product.state}}</p>
+            </div>
+            <div class="wine">
+                <h1>{{product.name}}</h1>
+                <div class="data">
+                    <div class="from">
+                        <img [src]="(product.country == 'United States') ? '../../../../assets/images/eua.svg' : '../../../../assets/images/spain.svg'" alt="" />
+                        <p>{{product.country}}</p>
+                    </div>
+                    <p>{{product.type}}</p>
+                    <p>{{product.quantityML}} ml</p>
+                    <div class="stars">
+                        <img src="../../../../assets/images/fullstar.svg" alt="" *ngFor="let star of stars" />
+                    </div>
+                </div>
+            </div>
+            <div class="mobile_image">
+                <img [src]="product.photo" alt="">
+            </div>
+            <div class="prices">
+                <p>R$<span> {{(product.price - (product.discount * product.price)/100).toFixed(2) }}</span></p>
+                <p>NÃO SÓCIO R${{product.price}}/UN.</p>
+            </div>
+            <div class="comment">
+                <p>Comentário do Sommelier</p>
+                <p>{{product.sommelierComment}}</p>
+            </div>
+            <div class="add_container">
+                <div class="add">
+                    <div class="controls">
+                        <p (click)="amountDecrement()">-</p>
+                        <p>{{amount}}</p>
+                        <p (click)="amountIncrement()">+</p>
+                    </div>
+                    <div class="add_button">
+                        <p (click)="addItemInCart()">
+                            Adicionar
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom_bar_mobile">
+        <div class="prices">
+            <p>R$ {{product.price}}</p>
+            <p>R$ <span>{{(product.price - (product.discount * product.price)/100).toFixed(2) }}</span></p>
+            <p>Não-sócio R$ {{product.price}}</p>
+            <div class="disccount">{{product.discount}}% OFF</div>
+        </div>
+        <div>
+            <button (click)="addItemInCart()">Adicionar</button>
+        </div>
+    </div>
+</div>

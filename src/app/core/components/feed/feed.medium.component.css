@@ -1,0 +1,28 @@
+@media screen and (max-width: 900px) {
+
+    .feed {
+        padding: 1rem 1rem;
+    }
+
+    .feed .filter_container {
+        display: none;
+    }
+
+    .feed .products {
+        margin-left: 0rem;
+        width: 100%;
+    }
+
+    .feed .products .header p {
+        border-bottom: 2px solid #E9E9E9;
+        padding: 1rem 0;
+    }
+
+
+    .feed .products .body {
+        gap: 0px;
+        row-gap: 40px;
+        justify-content: space-between;
+    }
+
+}

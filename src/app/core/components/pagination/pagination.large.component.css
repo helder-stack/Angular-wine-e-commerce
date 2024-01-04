@@ -1,0 +1,51 @@
+.pagination{
+    width: auto;
+    margin: auto;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination div{
+    width: 40px;
+    border: 1px solid rgba(182, 17, 110, 1);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.pagination div.expansive{
+    width: 80px;
+}
+
+.pagination .inverse{
+    transform: rotate(180deg);
+}
+
+a{
+    color: rgba(182, 17, 110, 1);
+    text-align: center;
+    cursor: pointer;
+}
+
+.before, .next{
+    display: flex;
+}
+
+a p{
+    color: rgba(182, 17, 110, 1);
+    padding: 0rem 0.5rem
+}
+
+.active{
+    background-color: rgba(182, 17, 110, 1);
+}
+
+.active a{
+    color: white
+}

@@ -1,0 +1,40 @@
+nav{
+    width: 100%;
+    padding: 0rem 2rem;
+    display: flex;
+    height: 100%;
+    margin-left: 5rem;
+}
+
+nav p{
+    padding: 3rem 0rem;
+    font-size: 18px;
+    line-height: 24px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+p.active{
+    color: rgba(209, 75, 143, 1);
+    position: relative;
+}
+
+p.active::before{
+    content: '';
+    height: 2px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: rgba(209, 75, 143, 1);
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (max-width: 1150px) {
+    nav p{
+        margin-right: 25px;
+    }
+
+    nav{
+    margin-left: 1rem;
+    }
+}
